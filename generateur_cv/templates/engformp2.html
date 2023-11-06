@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL DETAILS</title>
+    <link rel="icon" href="elements/logomini.png">
+    <style>
+        @media (min-width:320px) {
+            .darkmode {
+                background-color: #2D3041;
+                color: #F3F4F8;
+                font-family: anton;
+            }
+
+            input .darkmode {
+                color: #B6D5F2;
+            }
+
+            body {
+                font-family: 'Anton';
+                background-color: #B6D5F2;
+                color: #121214;
+                font-size: larger;
+
+            }
+
+            .cadre {
+                border: #ffffff solid;
+                align-self: center;
+                padding: 0%;
+                padding-top: 0%;
+                font-size: larger;
+                margin-top: 5px;
+                border-radius: 30px;
+                height: 500px;
+
+            }
+
+            footer {
+                align: center;
+                display: inline;
+            }
+
+            .form {
+                float: inline-end;
+            }
+
+            button {
+                display: inline-block;
+                background-color: #ffff;
+                border-radius: 10px;
+                border: 4px double #cccccc;
+                font-family: 'Anton';
+                color: #121214;
+                font-weight: bolder;
+                text-align: center;
+                font-size: 14px;
+                padding: 10px;
+                width: 80px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin-top: 5px;
+                position: right;
+                margin-right: 4%;
+            }
+
+            button:hover {
+                background-color: #e6ceb6;
+            }
+
+
+            .boutons {
+
+                display: inline;
+                margin-left: 12px;
+                color: #121214;
+                font-weight: bolder;
+            }
+
+            a {
+                text-decoration: none;
+                color: #121214;
+            }
+
+            input {
+                display: inline-block;
+                background-color: transparent;
+                border-radius: 10px;
+                border: 2px solid #F3F4F8;
+                color: #F3F4F8;
+                font-family: 'Anton';
+                text-align: center;
+                font-size: 14px;
+                height: 25px;
+                width: 110px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin-top: 25px;
+                position: right;
+                margin-left: 15px;
+            }
+
+            .toggle {
+                cursor: pointer;
+                margin-left: 255px;
+                margin-top: 2px;
+            }
+
+
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 34px;
+                height: 18px;
+            }
+
+            /* Hide default HTML checkbox */
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgb(80, 146, 221);
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 14px;
+                width: 14px;
+                left: 2px;
+                bottom: 2px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input:checked+.slider {
+                background-color: #ebe846;
+            }
+
+            input:focus+.slider {
+                box-shadow: 0 0 1px #ebe846;
+            }
+
+            input:checked+.slider:before {
+                -webkit-transform: translateX(16px);
+                -ms-transform: translateX(16px);
+                transform: translateX(16px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+            .image1 {
+                width: 50%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+
+            .image2 img {
+                width: 25%;
+                position: absolute;
+                left: 46%;
+                top: -2%;
+            }
+
+            h2 {
+
+                font-size: 20px;
+                font-family: 'Anton';
+                text-shadow: 1px 1px 1px #e634bf;
+                width: 280px;
+                height: 2cm;
+                margin-top: 16px;
+                margin-right: 40px;
+                margin-left: 7px;
+                top: 8%;
+                position: absolute;
+                color: #F3F4F8;
+            }
+
+            p {
+                font-size: 14px;
+                font-family: 'Anton';
+                text-align: center;
+                color: #ffffff;
+                text-shadow: 1px 1px 1px hwb(197 8% 24%);
+                margin-top: 50px;
+
+            }
+
+            ::placeholder {
+                color: #F3F4F8;
+            }
+
+            label {
+                font-size: 16px;
+                font-family: 'Anton';
+                text-shadow: 1px 1px 1px #000000;
+                position: absolute;
+                color: #F3F4F8;
+                margin-left: 7px;
+
+            }
+
+            .next {
+                background-color: #f6ca69;
+            }
+
+            .back {
+                background-color: #f6ca69;
+            }
+
+            textarea {
+                display: inline-block;
+                background-color: transparent;
+                border-radius: 15px;
+                border: 2px solid #F3F4F8;
+                color: #F3F4F8;
+                font-family: anton;
+                text-align: left;
+                font-size: 28px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin-left: 10px;
+                position: right;
+                width: 270px;
+                height: 130px;
+            }
+
+            select {
+                display: inline-block;
+                background-color: transparent;
+                border-radius: 10px;
+                border: 2px solid #F3F4F8;
+                color: #5262f1;
+                font-family: 'Anton';
+                text-align: left;
+                font-size: 14px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 5px;
+                position: right;
+                width: 110px;
+                height: 30px;
+                margin-top: 30px;
+            }
+
+            .one {
+                display: inline-block;
+            }
+        }
+
+        @media(min-width:480px) {
+            .cadre {
+                height: 550px;
+            }
+
+            button {
+
+                font-size: 14px;
+                padding: 10px;
+                width: 110px;
+                margin-right: 6%;
+
+            }
+
+            .boutons {
+
+                display: inline;
+                margin-left: 20px;
+            }
+
+            input {
+                font-size: 14px;
+                height: 30px;
+                width: 190px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin-top: 25px;
+                position: right;
+                margin-left: 15px;
+            }
+
+            .toggle {
+
+                margin-left: 415px;
+                margin-top: 7px;
+            }
+
+            .image1 {
+                width: 40%;
+
+            }
+
+            .image2 img {
+                width: 25%;
+                left: 40%;
+                top: -3%;
+            }
+
+            p {
+                margin-top: 60px;
+            }
+
+            textarea {
+                width: 430px;
+                height: 175px;
+            }
+
+            select {
+                width: 190px;
+                height: 35px;
+                margin-top: 30px;
+            }
+        }
+
+        @media(min-width:600px) {
+            textarea {
+                width: 545px;
+                height: 175px;
+            }
+
+            select {
+                width: 220px;
+                height: 35px;
+                margin-top: 30px;
+            }
+            input {
+                font-size: 14px;
+                height: 30px;
+                width: 220px;   
+            }
+            button {
+
+                font-size: 14px;
+                padding: 10px;
+                width: 130px;
+                margin-right: 9.2%;
+
+            }
+
+            .toggle {
+
+                margin-left: 540px;
+                margin-top: 10px;
+            }
+
+            .image1 {
+                width: 30%;
+
+            }
+
+            .image2 img {
+                width: 16%;
+                left: 42%;
+                top: -4%;
+            }
+            h2{
+                font-size: 20px;
+            }
+            label{
+                font-size: 18px;
+            }
+
+            p {
+                margin-top: 60px;
+            }
+            
+        }
+        @media(min-width:768px){
+            .cadre {
+                height: 530px;
+            }
+
+            .boutons {
+                margin-left: 70px;
+                margin-right: -50px;
+
+            }
+
+            button {
+
+                font-size: 20px;
+                padding: 10px 20px;
+                width: 160px;
+                margin-right: 60px;
+
+            }
+
+            .image1 {
+                width: 27%;
+
+            }
+
+            .image2 img {
+                width: 16%;
+                left: 42%;
+                top: -4%;
+            }
+
+            p {
+                margin-top: 60px;
+                text-size-adjust: 22px;
+            }
+            .toggle {
+                margin-left: 700px;
+                margin-top: 10px;
+            }
+            textarea {
+                width: 710px;
+                height: 145px;
+            }
+    
+            select {
+                width: 280px;
+            }
+            input {
+                width: 280px;   
+            }
+
+        }
+        @media(min-width:900px){
+            textarea {
+                width: 850px;
+                height: 145px;
+            }
+            input{
+                margin-left: 100px;
+                width: 280px;   
+            }
+            select {
+                
+                width: 280px;
+
+            }
+            label{
+                margin-left: 100px;
+                margin-right: 100px;
+
+            }
+            
+            .desc{
+                margin-left: 15px;
+            }
+            h2 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            .toggle {
+                margin-left: 820px;
+                margin-top: 10px;
+            }
+
+
+            .switch {
+                width: 50px;
+                height: 25px;
+                margin-left: 1px;
+            }
+
+
+            .slider:before {
+                height: 21px;
+                width: 21px;
+                bottom: px;
+            }
+
+            input:checked+.slider:before {
+                -webkit-transform: translateX(25px);
+                -ms-transform: translateX(25px);
+                transform: translateX(25px);
+            }
+            .boutons{
+                margin-left: 140px;
+            }
+        }
+        @media(min-width:1024px){
+            textarea {
+                width: 970px;
+                height: 145px;
+            }
+            input{
+                margin-left: 120px;
+                height: 35px;   
+            }
+            select {
+                margin-left: 120px;
+                height: 40px;
+
+            }
+            label{
+                margin-left: 120px;
+                margin-right: 100px;
+
+            }
+            
+            .desc{
+                margin-left: 15px;
+            }
+            h2 {
+                font-size: 25px;
+                margin-left: 20px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            .cadre {
+                height: 530px;
+            }
+            .toggle {
+                margin-left: 950px;
+                margin-top: 10px;
+            }
+
+
+            .boutons {
+                margin-left: 140px;
+            }
+
+        }
+        @media(minwidth:1200px){
+            textarea {
+                width: 1100px;
+                height: 145px;
+            }
+            input{
+                margin-left: 150px;  
+            }
+            select {
+                margin-left: 150px;
+
+            }
+            label{
+                margin-left: 150px;
+            }
+            
+            .desc{
+                margin-left: 15px;
+            }
+            .image1 {
+                width: 25%;
+
+            }
+
+            .image2 img {
+                width: 12%;
+                left: 42%;
+                top: -4%;
+            }
+            .toggle {
+                margin-left: 1120px;
+                margin-top: 10px;
+            }
+
+
+            .boutons {
+                margin-left: 200px;
+            }
+
+        }
+        @media(min-width:1382px){
+            .toggle {
+                margin-left: 1300px;
+                margin-top: 15px;
+            }
+            .boutons {
+                margin-left: 300px;
+            }
+            .image1 {
+                width: 25%;
+
+            }
+
+            .image2 img {
+                width: 12%;
+                left: 47%;
+                top: -4%;
+            }
+            textarea {
+                width: 1320px;
+                height: 145px;
+            }
+            input{
+                margin-left: 200px;  
+            }
+            select {
+                margin-left: 200px;
+
+            }
+            label{
+                margin-left: 200px;
+            }
+            
+            .desc{
+                margin-left: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="elements/logo3.png" class="image1">
+        <div class="image2">
+            <img src="elements/effect2.png" alt="logo_cv">
+        </div>
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round" onclick="myFunction()"></span>
+            </label>
+        </div>
+    </header>
+    <div class="cadre">
+
+        <div class="form">
+            <form method="POST">{% csrf_token %}
+                <div class="forma4">
+                    </br> </br>
+                    <div class="one">
+                        <label for="date">Date of birth :</label>
+                        <input type="date" id="date" name="date" value="11/09/2001">
+                        &nbsp;
+                        <label for="nat">Nationality :</label>
+                        <select class="select" name="nat">
+                            <option value="AFG">Afghane (Afghanistan)</option>
+                            <option value="ALB">Albanaise (Albanie)</option>
+                            <option value="DZA">Algérienne (Algérie)</option>
+                            <option value="DEU">Allemande (Allemagne)</option>
+                            <option value="USA">Americaine (États-Unis)</option>
+                            <option value="AND">Andorrane (Andorre)</option>
+                            <option value="AGO">Angolaise (Angola)</option>
+                            <option value="ATG">Antiguaise-et-Barbudienne (Antigua-et-Barbuda)</option>
+                            <option value="ARG">Argentine (Argentine)</option>
+                            <option value="ARM">Armenienne (Arménie)</option>
+                            <option value="AUS">Australienne (Australie)</option>
+                            <option value="AUT">Autrichienne (Autriche)</option>
+                            <option value="AZE">Azerbaïdjanaise (Azerbaïdjan)</option>
+                            <option value="BHS">Bahamienne (Bahamas)</option>
+                            <option value="BHR">Bahreinienne (Bahreïn)</option>
+                            <option value="BGD">Bangladaise (Bangladesh)</option>
+                            <option value="BRB">Barbadienne (Barbade)</option>
+                            <option value="BEL">Belge (Belgique)</option>
+                            <option value="BLZ">Belizienne (Belize)</option>
+                            <option value="BEN">Béninoise (Bénin)</option>
+                            <option value="BTN">Bhoutanaise (Bhoutan)</option>
+                            <option value="BLR">Biélorusse (Biélorussie)</option>
+                            <option value="MMR">Birmane (Birmanie)</option>
+                            <option value="GNB">Bissau-Guinéenne (Guinée-Bissau)</option>
+                            <option value="BOL">Bolivienne (Bolivie)</option>
+                            <option value="BIH">Bosnienne (Bosnie-Herzégovine)</option>
+                            <option value="BWA">Botswanaise (Botswana)</option>
+                            <option value="BRA">Brésilienne (Brésil)</option>
+                            <option value="GBR">Britannique (Royaume-Uni)</option>
+                            <option value="BRN">Brunéienne (Brunéi)</option>
+                            <option value="BGR">Bulgare (Bulgarie)</option>
+                            <option value="BFA">Burkinabée (Burkina)</option>
+                            <option value="BDI">Burundaise (Burundi)</option>
+                            <option value="KHM">Cambodgienne (Cambodge)</option>
+                            <option value="CMR">Camerounaise (Cameroun)</option>
+                            <option value="CAN">Canadienne (Canada)</option>
+                            <option value="CPV">Cap-verdienne (Cap-Vert)</option>
+                            <option value="CAF">Centrafricaine (Centrafrique)</option>
+                            <option value="CHL">Chilienne (Chili)</option>
+                            <option value="CHN">Chinoise (Chine)</option>
+                            <option value="CYP">Chypriote (Chypre)</option>
+                            <option value="COL">Colombienne (Colombie)</option>
+                            <option value="COM">Comorienne (Comores)</option>
+                            <option value="COG">Congolaise (Congo-Brazzaville)</option>
+                            <option value="COD">Congolaise (Congo-Kinshasa)</option>
+                            <option value="COK">Cookienne (Îles Cook)</option>
+                            <option value="CRI">Costaricaine (Costa Rica)</option>
+                            <option value="HRV">Croate (Croatie)</option>
+                            <option value="CUB">Cubaine (Cuba)</option>
+                            <option value="DNK">Danoise (Danemark)</option>
+                            <option value="DJI">Djiboutienne (Djibouti)</option>
+                            <option value="DOM">Dominicaine (République dominicaine)</option>
+                            <option value="DMA">Dominiquaise (Dominique)</option>
+                            <option value="EGY">Égyptienne (Égypte)</option>
+                            <option value="ARE">Émirienne (Émirats arabes unis)</option>
+                            <option value="GNQ">Équato-guineenne (Guinée équatoriale)</option>
+                            <option value="ECU">Équatorienne (Équateur)</option>
+                            <option value="ERI">Érythréenne (Érythrée)</option>
+                            <option value="ESP">Espagnole (Espagne)</option>
+                            <option value="TLS">Est-timoraise (Timor-Leste)</option>
+                            <option value="EST">Estonienne (Estonie)</option>
+                            <option value="ETH">Éthiopienne (Éthiopie)</option>
+                            <option value="FJI">Fidjienne (Fidji)</option>
+                            <option value="FIN">Finlandaise (Finlande)</option>
+                            <option value="FRA">Française (France)</option>
+                            <option value="GAB">Gabonaise (Gabon)</option>
+                            <option value="GMB">Gambienne (Gambie)</option>
+                            <option value="GEO">Georgienne (Géorgie)</option>
+                            <option value="GHA">Ghanéenne (Ghana)</option>
+                            <option value="GRD">Grenadienne (Grenade)</option>
+                            <option value="GTM">Guatémaltèque (Guatemala)</option>
+                            <option value="GIN">Guinéenne (Guinée)</option>
+                            <option value="GUY">Guyanienne (Guyana)</option>
+                            <option value="HTI">Haïtienne (Haïti)</option>
+                            <option value="GRC">Hellénique (Grèce)</option>
+                            <option value="HND">Hondurienne (Honduras)</option>
+                            <option value="HUN">Hongroise (Hongrie)</option>
+                            <option value="IND">Indienne (Inde)</option>
+                            <option value="IDN">Indonésienne (Indonésie)</option>
+                            <option value="IRQ">Irakienne (Iraq)</option>
+                            <option value="IRN">Iranienne (Iran)</option>
+                            <option value="IRL">Irlandaise (Irlande)</option>
+                            <option value="ISL">Islandaise (Islande)</option>
+                            <option value="ISR">Israélienne (Israël)</option>
+                            <option value="ITA">Italienne (Italie)</option>
+                            <option value="CIV">Ivoirienne (Côte d'Ivoire)</option>
+                            <option value="JAM">Jamaïcaine (Jamaïque)</option>
+                            <option value="JPN">Japonaise (Japon)</option>
+                            <option value="JOR">Jordanienne (Jordanie)</option>
+                            <option value="KAZ">Kazakhstanaise (Kazakhstan)</option>
+                            <option value="KEN">Kenyane (Kenya)</option>
+                            <option value="KGZ">Kirghize (Kirghizistan)</option>
+                            <option value="KIR">Kiribatienne (Kiribati)</option>
+                            <option value="KNA">Kittitienne et Névicienne (Saint-Christophe-et-Niévès)</option>
+                            <option value="KWT">Koweïtienne (Koweït)</option>
+                            <option value="LAO">Laotienne (Laos)</option>
+                            <option value="LSO">Lesothane (Lesotho)</option>
+                            <option value="LVA">Lettone (Lettonie)</option>
+                            <option value="LBN">Libanaise (Liban)</option>
+                            <option value="LBR">Libérienne (Libéria)</option>
+                            <option value="LBY">Libyenne (Libye)</option>
+                            <option value="LIE">Liechtensteinoise (Liechtenstein)</option>
+                            <option value="LTU">Lituanienne (Lituanie)</option>
+                            <option value="LUX">Luxembourgeoise (Luxembourg)</option>
+                            <option value="MKD">Macédonienne (Macédoine)</option>
+                            <option value="MYS">Malaisienne (Malaisie)</option>
+                            <option value="MWI">Malawienne (Malawi)</option>
+                            <option value="MDV">Maldivienne (Maldives)</option>
+                            <option value="MDG">Malgache (Madagascar)</option>
+                            <option value="MLI">Maliennes (Mali)</option>
+                            <option value="MLT">Maltaise (Malte)</option>
+                            <option value="MAR">Marocaine (Maroc)</option>
+                            <option value="MHL">Marshallaise (Îles Marshall)</option>
+                            <option value="MUS">Mauricienne (Maurice)</option>
+                            <option value="MRT">Mauritanienne (Mauritanie)</option>
+                            <option value="MEX">Mexicaine (Mexique)</option>
+                            <option value="FSM">Micronésienne (Micronésie)</option>
+                            <option value="MDA">Moldave (Moldovie)</option>
+                            <option value="MCO">Monegasque (Monaco)</option>
+                            <option value="MNG">Mongole (Mongolie)</option>
+                            <option value="MNE">Monténégrine (Monténégro)</option>
+                            <option value="MOZ">Mozambicaine (Mozambique)</option>
+                            <option value="NAM">Namibienne (Namibie)</option>
+                            <option value="NRU">Nauruane (Nauru)</option>
+                            <option value="NLD">Néerlandaise (Pays-Bas)</option>
+                            <option value="NZL">Néo-Zélandaise (Nouvelle-Zélande)</option>
+                            <option value="NPL">Népalaise (Népal)</option>
+                            <option value="NIC">Nicaraguayenne (Nicaragua)</option>
+                            <option value="NGA">Nigériane (Nigéria)</option>
+                            <option value="NER">Nigérienne (Niger)</option>
+                            <option value="NIU">Niuéenne (Niue)</option>
+                            <option value="PRK">Nord-coréenne (Corée du Nord)</option>
+                            <option value="NOR">Norvégienne (Norvège)</option>
+                            <option value="OMN">Omanaise (Oman)</option>
+                            <option value="UGA">Ougandaise (Ouganda)</option>
+                            <option value="UZB">Ouzbéke (Ouzbékistan)</option>
+                            <option value="PAK">Pakistanaise (Pakistan)</option>
+                            <option value="PLW">Palaosienne (Palaos)</option>
+                            <option value="PSE">Palestinienne (Palestine)</option>
+                            <option value="PAN">Panaméenne (Panama)</option>
+                            <option value="PNG">Papouane-Néo-Guinéenne (Papouasie-Nouvelle-Guinée)</option>
+                            <option value="PRY">Paraguayenne (Paraguay)</option>
+                            <option value="PER">Péruvienne (Pérou)</option>
+                            <option value="PHL">Philippine (Philippines)</option>
+                            <option value="POL">Polonaise (Pologne)</option>
+                            <option value="PRT">Portugaise (Portugal)</option>
+                            <option value="QAT">Qatarienne (Qatar)</option>
+                            <option value="ROU">Roumaine (Roumanie)</option>
+                            <option value="RUS">Russe (Russie)</option>
+                            <option value="RWA">Rwandaise (Rwanda)</option>
+                            <option value="LCA">Saint-Lucienne (Sainte-Lucie)</option>
+                            <option value="SMR">Saint-Marinaise (Saint-Marin)</option>
+                            <option value="VCT">Saint-Vincentaise et Grenadine (Saint-Vincent-et-les Grenadines)
+                            </option>
+                            <option value="SLB">Salomonaise (Îles Salomon)</option>
+                            <option value="SLV">Salvadorienne (Salvador)</option>
+                            <option value="WSM">Samoane (Samoa)</option>
+                            <option value="STP">Santoméenne (Sao Tomé-et-Principe)</option>
+                            <option value="SAU">Saoudienne (Arabie saoudite)</option>
+                            <option value="SEN">Sénégalaise (Sénégal)</option>
+                            <option value="SRB">Serbe (Serbie)</option>
+                            <option value="SYC">Seychelloise (Seychelles)</option>
+                            <option value="SLE">Sierra-Léonaise (Sierra Leone)</option>
+                            <option value="SGP">Singapourienne (Singapour)</option>
+                            <option value="SVK">Slovaque (Slovaquie)</option>
+                            <option value="SVN">Slovène (Slovénie)</option>
+                            <option value="SOM">Somalienne (Somalie)</option>
+                            <option value="SDN">Soudanaise (Soudan)</option>
+                            <option value="LKA">Sri-Lankaise (Sri Lanka)</option>
+                            <option value="ZAF">Sud-Africaine (Afrique du Sud)</option>
+                            <option value="KOR">Sud-Coréenne (Corée du Sud)</option>
+                            <option value="SSD">Sud-Soudanaise (Soudan du Sud)</option>
+                            <option value="SWE">Suédoise (Suède)</option>
+                            <option value="CHE">Suisse (Suisse)</option>
+                            <option value="SUR">Surinamaise (Suriname)</option>
+                            <option value="SWZ">Swazie (Swaziland)</option>
+                            <option value="SYR">Syrienne (Syrie)</option>
+                            <option value="TJK">Tadjike (Tadjikistan)</option>
+                            <option value="TZA">Tanzanienne (Tanzanie)</option>
+                            <option value="TCD">Tchadienne (Tchad)</option>
+                            <option value="CZE">Tchèque (Tchéquie)</option>
+                            <option value="THA">Thaïlandaise (Thaïlande)</option>
+                            <option value="TGO">Togolaise (Togo)</option>
+                            <option value="TON">Tonguienne (Tonga)</option>
+                            <option value="TTO">Trinidadienne (Trinité-et-Tobago)</option>
+                            <option value="TUN">Tunisienne (Tunisie)</option>
+                            <option value="TKM">Turkmène (Turkménistan)</option>
+                            <option value="TUR">Turque (Turquie)</option>
+                            <option value="TUV">Tuvaluane (Tuvalu)</option>
+                            <option value="UKR">Ukrainienne (Ukraine)</option>
+                            <option value="URY">Uruguayenne (Uruguay)</option>
+                            <option value="VUT">Vanuatuane (Vanuatu)</option>
+                            <option value="VAT">Vaticane (Vatican)</option>
+                            <option value="VEN">Vénézuélienne (Venezuela)</option>
+                            <option value="VNM">Vietnamienne (Viêt Nam)</option>
+                            <option value="YEM">Yéménite (Yémen)</option>
+                            <option value="ZMB">Zambienne (Zambie)</option>
+                            <option value="ZWE">Zimbabwéenne (Zimbabwe)</option>
+                        </select>
+
+                    </div>
+                    </br><br>
+                    <div class="one">
+
+                        <label for="site">LinkedIn or website</label>
+                        <input type="url" id="site" name="site">
+                        &nbsp;
+                        <label for="licence">Driver's license </label>
+                        <input type="text" class="inputtwo" id="phone" name="licence" >
+
+
+
+                    </div>
+
+                    </br><br>
+                </div>
+                <h2>Profile</h2>
+                <label for="skills" class="desc">Describe in few lines your skills and your career objectives</label> </br>
+                <br><textarea id="story" name="story" rows="8" cols="66"></textarea>
+                </br>
+
+        </div>
+    </div>
+    </div>
+    <div class="boutons">
+        <button class="back" onclick="javascript:window.location.href='engformp2.html';"><span>Back</span></button>
+        <button class="sub" type="submit">Submit</button>
+        <button class="next"><a href="engformp3.html">Next</a></button>
+    </div>
+    </form>
+
+
+
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("darkmode");
+        }
+    </script>
+</body>
+
+</html>

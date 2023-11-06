@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USEFUL TIPS</title>
+    <link rel="icon" href="elements/logomini.png">
+    <style>
+        @media (min-width:320px) {
+            .left {
+                width: 180px;
+                height: 240px;
+                margin-left: 120px;
+                margin-top: -160px;
+            }
+
+            .darkmode {
+                background-color: #2D3041;
+                color: #F3F4F8;
+                font-family: anton;
+            }
+
+            input .darkmode {
+                color: #B6D5F2;
+            }
+
+            body {
+                font-family: 'Anton';
+                background-color: #B6D5F2;
+                color: #121214;
+                font-size: larger;
+
+            }
+
+            .cadre {
+                border: #ffffff solid;
+                align-self: center;
+                padding: 0%;
+                padding-top: 0%;
+                font-size: larger;
+                margin-top: 5px;
+                border-radius: 30px;
+                height: 470px;
+
+            }
+
+            button {
+                display: inline-block;
+                background-color: #ffff;
+                border-radius: 10px;
+                border: 4px double #cccccc;
+                font-family: 'Anton';
+                color: #121214;
+                font-weight: bolder;
+                text-align: center;
+                font-size: 14px;
+                padding: 10px;
+                width: 80px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin-top: 5px;
+                position: right;
+                margin-right: 18%;
+            }
+
+            button:hover {
+                background-color: #e6ceb6;
+            }
+
+
+            .boutons {
+
+                display: inline;
+                margin-left: 30px;
+                color: #121214;
+                font-weight: bolder;
+            }
+
+            a {
+                text-decoration: none;
+                color: #121214;
+            }
+
+            .toggle {
+                cursor: pointer;
+                margin-left: 255px;
+                margin-top: 2px;
+            }
+
+
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 34px;
+                height: 18px;
+            }
+
+            /* Hide default HTML checkbox */
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgb(80, 146, 221);
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 14px;
+                width: 14px;
+                left: 2px;
+                bottom: 2px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input:checked+.slider {
+                background-color: #ebe846;
+            }
+
+            input:focus+.slider {
+                box-shadow: 0 0 1px #ebe846;
+            }
+
+            input:checked+.slider:before {
+                -webkit-transform: translateX(16px);
+                -ms-transform: translateX(16px);
+                transform: translateX(16px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+            .image1 {
+                width: 50%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+
+            .image2 img {
+                width: 25%;
+                position: absolute;
+                left: 46%;
+                top: -2%;
+            }
+
+
+            h2 {
+
+                font-size: 20px;
+                font-family: 'Anton';
+                text-shadow: 1px 1px 1px #e634bf;
+                width: 240px;
+                height: 2cm;
+                margin-top: 16px;
+                margin-right: 40px;
+                margin-left: 7px;
+                top: 8%;
+                position: absolute;
+                color: #F3F4F8;
+            }
+
+            p {
+                font-size: 10px;
+                font-family: 'Anton';
+                color: #ffffff;
+                text-shadow: 1px 1px 1px hwb(0 7% 93%);
+                margin-top: 20px;
+                margin-left: 10px;
+                width: 120px;
+                color: #ffffff;
+
+            }
+
+            .next {
+                background-color: #f6ca69;
+            }
+
+            .back {
+                background-color: #f6ca69;
+            }
+
+            ol {
+                font-family: 'Anton';
+                font-size: 20px;
+                color: #ffffff;
+                text-shadow: 1px 1px 1px hwb(0 7% 93%);
+                margin-top: 100px;
+                margin-left: 1px;
+            }
+        }
+
+        @media(min-width:480px) {
+            .cadre {
+                height: 460px;
+            }
+
+            button {
+
+                font-size: 14px;
+                padding: 10px;
+                width: 110px;
+                margin-right: 20%;
+
+            }
+
+            .boutons {
+
+                display: inline;
+                margin-left: 50px;
+            }
+
+            .toggle {
+
+                margin-left: 415px;
+                margin-top: 7px;
+            }
+
+            .image1 {
+                width: 40%;
+
+            }
+
+            .image2 img {
+                width: 25%;
+                left: 40%;
+                top: -3%;
+            }
+
+            h2 {
+                width: 400px;
+            }
+
+            p {
+                margin-top: 20px;
+                width: 150px;
+                font-size: 14px;
+            }
+
+            .left {
+                width: 240px;
+                height: 290px;
+                margin-left: 220px;
+                margin-top: -300px;
+            }
+
+            ol {
+                margin-top: 60px;
+            }
+
+        }
+
+        @media(min-width:600px) {
+            button {
+
+                font-size: 14px;
+                padding: 10px;
+                width: 130px;
+                margin-right: 34%;
+
+            }
+            .boutons{
+                margin-right: -150px;
+            }
+
+            .toggle {
+
+                margin-left: 540px;
+                margin-top: 10px;
+            }
+
+            .image1 {
+                width: 30%;
+
+            }
+
+            .image2 img {
+                width: 16%;
+                left: 42%;
+                top: -4%;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+            .left {
+                width: 280px;
+                height: 330px;
+                margin-left: 300px;
+                margin-top: -300px;
+            }
+        }
+        @media(min-width:768px){
+
+            .boutons {
+                margin-left: 70px;
+                margin-right: -350px;
+
+            }
+
+            button {
+
+                font-size: 20px;
+                padding: 10px 20px;
+                width: 160px;
+                margin-right: 300px;
+
+            }
+
+            .image1 {
+                width: 27%;
+
+            }
+
+            .image2 img {
+                width: 16%;
+                left: 42%;
+                top: -4%;
+            }
+            .left {
+                width: 330px;
+                height: 380px;
+                margin-left: 420px;
+                margin-top: -350px;
+            }
+            .cadre{
+                height: 440px;
+            }
+            p{
+                width: 300px;
+                font-size: 18px;
+            }
+            ol{
+                margin-top: 80px;
+            }
+            .toggle {
+                margin-left: 700px;
+                margin-top: 10px;
+            }
+        }
+        @media(min-width:900px){
+
+            .toggle {
+                margin-left: 820px;
+                margin-top: 10px;
+            }
+
+
+            .switch {
+                width: 50px;
+                height: 25px;
+                margin-left: 1px;
+            }
+
+
+            .slider:before {
+                height: 21px;
+                width: 21px;
+                bottom: px;
+            }
+
+            input:checked+.slider:before {
+                -webkit-transform: translateX(25px);
+                -ms-transform: translateX(25px);
+                transform: translateX(25px);
+            }
+            .boutons{
+                margin-left: 140px;
+            }
+            .left {
+                margin-left: 550px;
+                
+            }
+
+        }
+        @media(min-width:1024px){
+            .left {
+                width: 350px;
+                height: 450px;
+                margin-left: 650px;
+                
+            }
+            h2{
+                width: 500px;
+                font-size: 26px;
+                margin-left: 10px;
+            }
+            ol{
+                margin-left: 50px;
+                margin-top: 130px;
+            }
+            p{
+                width: 500px;
+                font-size: 23px;
+            }
+            .cadre {
+                height: 530px;
+            }
+            .toggle {
+                margin-left: 950px;
+                margin-top: 10px;
+            }
+
+
+            .boutons {
+                margin-left: 140px;
+            }
+
+        }
+        @media(min-width:1200px){
+            .image1 {
+                width: 25%;
+
+            }
+
+            .image2 img {
+                width: 12%;
+                left: 42%;
+                top: -4%;
+            }
+            .toggle {
+                margin-left: 1120px;
+                margin-top: 10px;
+            }
+
+            button{
+                margin-right: 35%;
+            }
+            .boutons {
+                margin-left: 200px;
+            }
+            .left{
+                margin-left: 830px;
+            }
+        }
+        @media(min-width:1382px){
+            .toggle {
+                margin-left: 1300px;
+                margin-top: 15px;
+            }
+            .boutons {
+                margin-left: 300px;
+            }
+            .image1 {
+                width: 25%;
+
+            }
+            .left{
+                margin-left: 1010px;
+            }
+
+            .image2 img {
+                width: 12%;
+                left: 47%;
+                top: -4%;
+            }
+        }
+        @media(min-width:1500px){
+            .toggle {
+                margin-left: 1420px;
+                margin-top: 15px;
+            }
+            .boutons {
+                margin-left: 300px;
+            }
+            .image1 {
+                width: 15%;
+
+            }
+            .left{
+                margin-left: 1110px;
+            }
+
+            .image2 img {
+                width: 12%;
+                left: 47%;
+                top: -4%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./../static/elements/logo3.png" class="image1">
+        <div class="image2">
+            <img src="./../static/elements/effect2.png" alt="logo_cv">
+        </div>
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round" onclick="myFunction()"></span>
+            </label>
+        </div>
+    </header>
+    <div class="cadre">
+        <U>
+            <h2 underlined>Useful tips to better describe your experience</h2>
+        </U>
+
+        <ol>
+            <li>
+
+                <p> Start the description with your most recent experience.</p>
+            </li>
+            <li>
+                <p> Don't forget to specify the start and end dates.</p>
+
+            </li>
+            <li>
+
+                <p> Avoid using personal pronouns like 'i','me' or 'my'.</p>
+            </li>
+            <li>
+
+                <p> To <mark>Highlight</mark> your responsibility,use infinitive verbs(for ex.
+                    increase,desire,offer,learn,...)
+                    .</p>
+            </li>
+        </ol>
+        <img src="./../static/elements/confused girl.png" alt="" class="left">
+
+
+
+    </div>
+
+
+    <div class="boutons">
+        <button class="back" onclick="javascript:window.location.href='engformp2.html';"><span>Back</span></button>
+        <button class="next"><a href="engformp4.html">Next</a></button>
+    </div>
+
+
+
+
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("darkmode");
+        }
+    </script>
+</body>
+
+</html>

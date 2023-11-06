@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERTIFICATS</title>
+    <link rel="icon" href="elements/logomini.png">
+    <link rel="stylesheet" type="text/css" href="css/styleone.css">
+</head>
+
+<body>
+    <header>
+        <img src="elements/logo3.png" class="image1">
+        <div class="image2">
+            <img src="elements/effect2.png" alt="logo_cv">
+        </div>
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round" onclick="myFunction()"></span>
+            </label>
+        </div>
+    </header>
+    <div class="cadre">
+        <h2> Certificats</h2>
+
+        <div class="form">
+            <form method="POST">
+                <label for="certificate">Certificat</label><br>
+                <textarea id="certificate" name="certificate" rows="1" cols="46"></textarea>
+                </br>
+                <div class="forma4">
+                    <label for="duration">Durée</label><br><br><br>
+                    <div class="duration">
+
+                        <p>Jours</p>
+                        <select>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="2">22</option>
+                            <option value="3">23</option>
+                            <option value="4">24</option>
+                            <option value="5">25</option>
+                            <option value="6">26</option>
+                            <option value="7">27</option>
+                            <option value="8">28</option>
+                            <option value="9">29</option>
+                            <option value="10">30</option>
+                        </select>
+                        <p> Mois </p>
+                        <select>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <br>
+                    <label for="noend">Présent </label>
+                    <input type="checkbox" id="noend" name="noend">
+                    <br>
+                    <label>Description</label>
+                    <textarea id="description" name="description" rows="5" cols="46"></textarea><BR><br>
+
+                    </br>
+
+                </div>
+        </div>
+    </div>
+
+    <div class="boutons">
+        <button class="back" onclick="javascript:window.location.href='frformp11.html';"><span>Retour</span></button>
+                  <button class="sub" type="submit">Envoyer</button>
+        <button class="next"><a href="app/templates/frcv.html">Suivant</a></button>
+    </div>
+
+</form>
+
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("darkmode");
+        }
+    </script>
+</body>
+
+</html>

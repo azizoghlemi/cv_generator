@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التدريبات</title>
+    <link rel="icon" href="C:\Users\omen laptop\Desktop\generateur cv\elements\logomini.png">
+    <link rel="stylesheet" href="css\arstyle.css">
+    
+</head>
+
+<body>
+    <header>
+        <img src="C:\Users\omen laptop\Desktop\generateur cv\elements\logo2.png" align="left" width="300 px" height="100 px" >
+        <img src="C:\Users\omen laptop\Desktop\generateur cv\elements\toggle-button2.png" align="right" width="100 px" height="100 px" onclick="myFunction()">
+    </header>
+</br>
+</br>
+</br>
+</br> </br> </br>
+    <div class="cadre">
+        <h2> التدريبات</h2>
+       
+        <div class="form">
+            <form method="POST"> 
+                <label for="int">التدريب</label><br>
+                <textarea id="int" name="int" rows="1" cols="46"></textarea>
+             </br>
+             <div class="forma4">
+                <label for="employer">المؤسسة </label>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label for="town">المدينة/البلاد
+                    
+                </label><br>
+
+                    <input type="text" id="employer" name="employer">
+                    &nbsp; &nbsp;
+                    <input type="text" id="town" name="town">
+                   </br>
+                   <label for="start">تاريخ البداية </label>  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label for="end">تاريخ النهاية</label><br> 
+                   <input type="date" id="start" name="start">   &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  &nbsp; &nbsp;  <input type="date" id="end" name="end"> 
+            <br> 
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input type="checkbox" id="noend" name="noend">
+             <label for="noend">لم ينتهي بعد</label>
+             <h3>وصف التدريب</h3>
+             <textarea id="description" name="description" rows="5" cols="46"></textarea><BR><br>
+             <a href="arformp10.html"><input type="submit" value="أضف تدريبا اخر"></a>
+             <a href="arformp10.html"><input type="submit" value="سجل"></a>
+
+            </div>
+            </form>
+        </div>
+        
+    </div>    
+</br> </br></br> 
+    <footer>
+        <a href="arformp9.html"><input type="reset" value="رجوع"></a> &emsp; &emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; &emsp;
+        <a href="arformp11.html"><input type="submit" value="واصل"></a>
+
+    </footer>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("darkmode");
+        }
+        </script>
+</body>
+</html>

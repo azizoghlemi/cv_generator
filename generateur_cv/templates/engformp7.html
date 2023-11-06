@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILLS</title>
+    <link rel="icon" href="elements/logomini.png">
+    <link rel="stylesheet" type="text/css" href="./../static/css/styletwo.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="./../static/elements/logo3.png" class="image1">
+        <div class="image2">
+            <img src="./../static/elements/effect2.png" alt="logo_cv">
+        </div>
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider_round" onclick="myFunction()"></span>
+            </label>
+        </div>       
+    </header>
+    <div class="cadre">
+        <h2> Skills</h2>
+        <div class="form">
+            <form method="POST"> {% csrf_token %}
+                <label for="skill">Skill</label><br><br>
+                <textarea id="skill" name="skill" rows="1" cols="49"></textarea>
+             </br></br>
+             <label for="level">Level (out of 10 )</label><br></br>
+             <div class="slidecontainer">
+                <input name="level" type="range" min="1" max="10" value="5" class="slider" id="myRange">
+                <p>LEVEL : <span id="demo"></span></p>
+             </div>
+            
+            </br></br> 
+        </div>
+    </div>        
+    </div>  
+    
+
+<div class="boutons">
+    <button class="back" onclick="javascript:window.location.href='engformp6.html';">Back</button>
+    <button class="sub" type="submit">Submit</button>
+    <button class="next"><a href="engformp8.html">Next</a></button>
+</div>
+    </form>
+
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("darkmode");
+        }
+        
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+            
+            slider.oninput = function() {
+              output.innerHTML = this.value;
+            }
+            </script>
+</body>
+</html>

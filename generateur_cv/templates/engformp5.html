@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAINING</title>
+    <link rel="icon" href="./../static/elements/logomini.png">
+    <link rel="stylesheet" type="text/css" href="./../static/css/styleone.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="./../static/elements/logo3.png" class="image1">
+        <div class="image2">
+            <img src="./../static/elements/effect2.png" alt="logo_cv">
+        </div>
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round" onclick="myFunction()"></span>
+            </label>
+        </div>
+    </header>
+    <div class="cadre">
+        <h2> Training</h2>
+
+        <div class="form">
+            <form method="POST">{% csrf_token %}
+                <label for="training">Training</label><br>
+                <textarea id="training" name="training" rows="1" cols="46"></textarea>
+                </br>
+                <div class="forma4">
+                    <div class="StartEnd">
+                        <label for="establishment">Establishment </label>
+                        <input type="text" id="Establishment" name="establishment">
+                    </div>
+                    <div class="StartEnd">
+                        <label for="town">Town/country</label>
+                        <input type="text" id="town" name="town">
+                    </div>
+                    </br>
+                    <div class="StartEnd">
+                        <label for="start">Start date </label>
+                        <input type="date" id="start" name="start">
+                    </div>
+                    <div class="StartEnd">
+                        <label for="end">End date</label>
+                        <input type="date" id="start" name="start">
+                    </div>
+                    </br>
+                    <div class="pres">
+                        <label for="noend">Present </label>
+                        <input type="checkbox" id="noend" name="noend"><br>
+                    </div>
+                    <label>Description</label>
+                    <textarea id="description" name="description" rows="5" cols="46"></textarea><BR><br>
+
+                    </br>
+
+                </div>
+        </div>
+    </div>
+
+    <div class="boutons">
+        <button class="back" onclick="javascript:window.location.href='engformp4.html';"><span>Back</span></button>
+        <input type="submit" value="Add Training" align="center">
+        <button class="next"><a href="engformp6.html">Next</a></button>
+    </div>
+ </form>
+
+
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("darkmode");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./../static/elements/logomini.png">
+    <title>Welcome</title>
+    <style>
+        body {
+            background-color: #B6D5F2;
+            width: 50%;
+        }
+
+
+        @media (min-width :320px) {
+
+            .image1 img {
+                width: 50%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            .effectone {
+                width: 100%;
+                position: absolute;
+                top: 20px;
+                left: 90px;
+
+            }
+
+            .image2 img {
+                width: 25%;
+                position: absolute;
+                left: 36%;
+                top: 90%;
+            }
+
+
+            h1 {
+                font-size: 40px;
+                color: #F3F4F8;
+                width: 160px;
+                font-family: 'Anton';
+                margin-top: 80px;
+                margin-bottom: 100px;
+                text-align: center;
+                margin-right: 70px;
+                margin-left: 0px;
+                text-shadow: 2px 2px 2px #b2cf10;
+
+            }
+
+            h4 {
+
+                font-size: 16px;
+                font-family: 'Anton';
+                text-shadow: 1px 1px 1px #cf1010;
+                color: #2D3041;
+                text-align: center;
+                width: 280px;
+                height: 2cm;
+                margin-top: 16px;
+                margin-right: 40px;
+                margin-left: 10px;
+                top: 50%;
+                position: absolute;
+                color: #F3F4F8;
+            }
+
+            .myButton1 {
+                background-image: url("elements/france.png");
+                background-size: contain;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 16px;
+                font-weight: bold;
+                padding: 20px 30px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                text-indent: -23px;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 5px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton1:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton1:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton2 {
+                background-image: url("elements/uk.gif");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 16px;
+                font-weight: bold;
+                padding: 20px 30px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                text-indent: -18px;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 5px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+
+            .myButton2:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton2:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton3 {
+                background-image: url("elements/pal.png");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 16px;
+                font-weight: bold;
+                padding: 20px 30px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                text-indent: -8px;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 5px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton3:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton3:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .image {
+
+                top: 19%;
+                left: 47%;
+                height: 170px;
+                object-fit: cover;
+                width: 190px;
+                position: absolute;
+                display: inline-block;
+            }
+
+            .button {
+                position: absolute;
+                text-align: center;
+                top: 65%;
+                left: 12%;
+                width: 20%;
+                vertical-align: middle;
+                display: inline-flex;
+
+            }
+
+            .darkmode {
+                background-color: #2D3041;
+                color: #F3F4F8;
+                font-family: 'Anton';
+            }
+
+            .toggle {
+                cursor: pointer;
+                margin-left: 255px;
+                margin-top: 2px;
+            }
+
+
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 34px;
+                height: 18px;
+            }
+
+            /* Hide default HTML checkbox */
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgb(80, 146, 221);
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 14px;
+                width: 14px;
+                left: 2px;
+                bottom: 2px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input:checked+.slider {
+                background-color: #ebe846;
+            }
+
+            input:focus+.slider {
+                box-shadow: 0 0 1px #ebe846;
+            }
+
+            input:checked+.slider:before {
+                -webkit-transform: translateX(16px);
+                -ms-transform: translateX(16px);
+                transform: translateX(16px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+        }
+        @media (min-width : 480px){
+            .image1 img {
+                width: 50%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            .effectone {
+                width: 100%;
+                position: absolute;
+                top: -40px;
+                left: 110px;
+
+            }
+
+            .image2 img {
+                width: 25%;
+                position: absolute;
+                left: 38%;
+                top: 95%;
+            }
+
+
+            h1 {
+                font-size: 45px;
+                color: #F3F4F8;
+                width: 160px;
+                font-family: 'Anton';
+                margin-top: 80px;
+                margin-bottom: 100px;
+                text-align: center;
+                margin-right: 70px;
+                margin-left: 60px;
+                text-shadow: 2px 2px 2px #b2cf10;
+
+            }
+
+            h4 {
+
+                font-size: 18px;
+                font-family: 'Anton';
+                text-shadow: 1px 1px 1px #cf1010;
+                color: #2D3041;
+                text-align: center;
+                width: 370px;
+                height: 2cm;
+                margin-top: 16px;
+                margin-right: 40px;
+                margin-left: 60px;
+                top: 57%;
+                position: absolute;
+                color: #F3F4F8;
+            }
+
+            .myButton1 {
+                background-image: url("elements/france.png");
+                background-size: contain;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 16px;
+                font-weight: bold;
+                padding: 20px 30px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                text-indent: -20px;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 5px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton1:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton1:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton2 {
+                background-image: url("elements/uk.gif");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 16px;
+                font-weight: bold;
+                padding: 20px 30px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                text-indent: -18px;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 5px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+
+            .myButton2:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton2:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton3 {
+                background-image: url("elements/pal.png");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 16px;
+                font-weight: bold;
+                padding: 20px 30px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                text-indent: -8px;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 5px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton3:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton3:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .image {
+
+                top: 16%;
+                left: 47%;
+                height: 210px;
+                object-fit: cover;
+                width: 240px;
+                position: absolute;
+                display: inline-block;
+            }
+
+            .button {
+                position: absolute;
+                text-align: center;
+                top: 70%;
+                left: 23%;
+                width: 20%;
+                vertical-align: middle;
+                display: inline-flex;
+
+            }
+
+            .darkmode {
+                background-color: #2D3041;
+                color: #F3F4F8;
+                font-family: 'Anton';
+            }
+
+            .toggle {
+                cursor: pointer;
+                margin-left: 425px;
+                margin-top: 10px;
+            }
+
+
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 34px;
+                height: 18px;
+            }
+
+            /* Hide default HTML checkbox */
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgb(80, 146, 221);
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 14px;
+                width: 14px;
+                left: 2px;
+                bottom: 2px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input:checked+.slider {
+                background-color: #ebe846;
+            }
+
+            input:focus+.slider {
+                box-shadow: 0 0 1px #ebe846;
+            }
+
+            input:checked+.slider:before {
+                -webkit-transform: translateX(16px);
+                -ms-transform: translateX(16px);
+                transform: translateX(16px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+        }
+
+        @media (min-width:600px){
+            .image1 img {
+                width: 50%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            .effectone {
+                width: 100%;
+                position: absolute;
+                top: -95px;
+                left: 140px;
+
+            }
+
+            .image2 img {
+                width: 25%;
+                position: absolute;
+                left: 38%;
+                top: 92%;
+            }
+
+
+            h1 {
+                font-size: 55px;
+                color: #F3F4F8;
+                width: 160px;
+                font-family: 'Anton';
+                margin-top: 60px;
+                margin-bottom: 100px;
+                text-align: center;
+                margin-right: 70px;
+                margin-left: 60px;
+                text-shadow: 2px 2px 2px #b2cf10;
+
+            }
+
+            h4 {
+
+                font-size: 23px;
+                font-family: 'Anton';
+                text-shadow: 1px 1px 1px #cf1010;
+                color: #2D3041;
+                text-align: center;
+                width: 450px;
+                height: 2cm;
+                margin-top: 16px;
+                margin-right: 40px;
+                margin-left: 60px;
+                top: 60%;
+                position: absolute;
+                color: #F3F4F8;
+            }
+
+            .myButton1 {
+                background-image: url("elements/france.png");
+                text-indent: -20px;
+                background-size: contain;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 18px;
+                font-weight: bold;
+                padding: 30px 40px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 5px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton1:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton1:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton2 {
+                background-image: url("elements/uk.gif");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 18px;
+                font-weight: bold;
+                padding: 30px 40px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 5px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+
+            .myButton2:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton2:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton3 {
+                background-image: url("elements/pal.png");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 18px;
+                font-weight: bold;
+                padding: 30px 40px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 5px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton3:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton3:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .image {
+
+                top: 10%;
+                left: 47%;
+                height: 280px;
+                object-fit: cover;
+                width: 300px;
+                position: absolute;
+                display: inline-block;
+            }
+
+            .button {
+                position: absolute;
+                text-align: center;
+                top: 76%;
+                left: 23%;
+                width: 20%;
+                vertical-align: middle;
+                display: inline-flex;
+
+            }
+
+            .darkmode {
+                background-color: #2D3041;
+                color: #F3F4F8;
+                font-family: 'Anton';
+            }
+
+            .toggle {
+                cursor: pointer;
+                margin-left: 525px;
+                margin-top: 10px;
+            }
+
+
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 44px;
+                height: 24px;
+            }
+
+            /* Hide default HTML checkbox */
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgb(80, 146, 221);
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 20px;
+                width: 20px;
+                left: 2px;
+                bottom: 2px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input:checked+.slider {
+                background-color: #ebe846;
+            }
+
+            input:focus+.slider {
+                box-shadow: 0 0 1px #ebe846;
+            }
+
+            input:checked+.slider:before {
+                -webkit-transform: translateX(20px);
+                -ms-transform: translateX(20px);
+                transform: translateX(20px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+        }
+
+        @media (min-width:768px){
+            .image1 img {
+                width: 30%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            .effectone {
+                width: 100%;
+                position: absolute;
+                top: -155px;
+                left: 140px;
+
+            }
+
+            .image2 img {
+                width: 25%;
+                position: absolute;
+                left: 38%;
+                top: 92%;
+            }
+
+
+            h1 {
+                font-size: 55px;
+                color: #F3F4F8;
+                width: 220px;
+                font-family: 'Anton';
+                margin-top: 60px;
+                margin-bottom: 100px;
+                text-align: center;
+                margin-right: 70px;
+                margin-left: 60px;
+                text-shadow: 2px 2px 2px #b2cf10;
+
+            }
+
+            h4 {
+
+                font-size: 23px;
+                font-family: 'Anton';
+                text-shadow: 1px 1px 1px #cf1010;
+                color: #2D3041;
+                text-align: center;
+                width: 450px;
+                height: 2cm;
+                margin-top: 16px;
+                margin-right: 40px;
+                margin-left: 130px;
+                top: 60%;
+                position: absolute;
+                color: #F3F4F8;
+            }
+
+            .myButton1 {
+                background-image: url("elements/france.png");
+                text-indent: -20px;
+                background-size: contain;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 18px;
+                font-weight: bold;
+                padding: 30px 34px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton1:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton1:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton2 {
+                background-image: url("elements/uk.gif");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 18px;
+                font-weight: bold;
+                text-indent: -12px;
+                padding: 30px 34px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+
+            .myButton2:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton2:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton3 {
+                background-image: url("elements/pal.png");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 18px;
+                font-weight: bold;
+                padding: 30px 34px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton3:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton3:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .image {
+
+                top: 10%;
+                left: 47%;
+                height: 280px;
+                object-fit: cover;
+                width: 300px;
+                position: absolute;
+                display: inline-block;
+            }
+
+            .button {
+                position: absolute;
+                text-align: center;
+                top: 76%;
+                left: 23%;
+                width: 20%;
+                vertical-align: middle;
+                display: inline-flex;
+
+            }
+
+            .darkmode {
+                background-color: #2D3041;
+                color: #F3F4F8;
+                font-family: 'Anton';
+            }
+
+            .toggle {
+                cursor: pointer;
+                margin-left: 655px;
+                margin-top: 10px;
+            }
+
+
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 44px;
+                height: 24px;
+            }
+
+            /* Hide default HTML checkbox */
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgb(80, 146, 221);
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 20px;
+                width: 20px;
+                left: 2px;
+                bottom: 2px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input:checked+.slider {
+                background-color: #ebe846;
+            }
+
+            input:focus+.slider {
+                box-shadow: 0 0 1px #ebe846;
+            }
+
+            input:checked+.slider:before {
+                -webkit-transform: translateX(20px);
+                -ms-transform: translateX(20px);
+                transform: translateX(20px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+        }
+
+        @media (min-width:900px){
+            .image1 img {
+                width: 30%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            .effectone {
+                width: 100%;
+                position: absolute;
+                top: -195px;
+                left: 140px;
+
+            }
+
+            .image2 img {
+                width: 15%;
+                position: absolute;
+                left: 42%;
+                top: -3%;
+            }
+
+
+            h1 {
+                font-size: 70px;
+                color: #F3F4F8;
+                width: 280px;
+                font-family: 'Anton';
+                margin-top: 40px;
+                margin-bottom: 100px;
+                text-align: center;
+                margin-right: 70px;
+                margin-left: 60px;
+                text-shadow: 2px 2px 2px #b2cf10;
+
+            }
+
+            h4 {
+
+                font-size: 23px;
+                font-family: 'Anton';
+                text-shadow: 1px 1px 1px #cf1010;
+                color: #2D3041;
+                text-align: center;
+                width: 450px;
+                height: 2cm;
+                margin-top: 16px;
+                margin-right: 40px;
+                margin-left: 180px;
+                top: 60%;
+                position: absolute;
+                color: #F3F4F8;
+            }
+
+            .myButton1 {
+                background-image: url("elements/france.png");
+                text-indent: -20px;
+                background-size: contain;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 22px;
+                font-weight: bold;
+                padding: 40px 44px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton1:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton1:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton2 {
+                background-image: url("elements/uk.gif");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 22px;
+                font-weight: bold;
+                padding: 40px 44px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+
+            .myButton2:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton2:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton3 {
+                background-image: url("elements/pal.png");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 22px;
+                font-weight: bold;
+                padding: 40px 44px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton3:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton3:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .image {
+
+                top: 4%;
+                left: 47%;
+                height: 370px;
+                object-fit: cover;
+                width: 390px;
+                position: absolute;
+                display: inline-block;
+            }
+
+            .button {
+                position: absolute;
+                text-align: center;
+                top: 70%;
+                left: 23%;
+                width: 20%;
+                vertical-align: middle;
+                display: inline-flex;
+
+            }
+
+            .darkmode {
+                background-color: #2D3041;
+                color: #F3F4F8;
+                font-family: 'Anton';
+            }
+
+            .toggle {
+                cursor: pointer;
+                margin-left: 765px;
+                margin-top: 15px;
+            }
+
+
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 44px;
+                height: 24px;
+            }
+
+            /* Hide default HTML checkbox */
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgb(80, 146, 221);
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 20px;
+                width: 20px;
+                left: 2px;
+                bottom: 2px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input:checked+.slider {
+                background-color: #ebe846;
+            }
+
+            input:focus+.slider {
+                box-shadow: 0 0 1px #ebe846;
+            }
+
+            input:checked+.slider:before {
+                -webkit-transform: translateX(20px);
+                -ms-transform: translateX(20px);
+                transform: translateX(20px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+
+        }
+
+        @media (min-width:1024px){
+            .image1 img {
+                width: 20%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            .effectone {
+                width: 100%;
+                position: absolute;
+                top: -225px;
+                left: 190px;
+
+            }
+
+            .image2 img {
+                width: 15%;
+                position: absolute;
+                left: 40%;
+                top: -5%;
+            }
+
+
+            h1 {
+                font-size: 60px;
+                color: #F3F4F8;
+                width: 280px;
+                font-family: 'Anton';
+                margin-top: 30px;
+                margin-bottom: 100px;
+                text-align: center;
+                margin-right: 70px;
+                margin-left: 80px;
+                text-shadow: 2px 2px 2px #b2cf10;
+
+            }
+
+            h4 {
+
+                font-size: 23px;
+                font-family: 'Anton';
+                text-shadow: 1px 1px 1px #cf1010;
+                color: #2D3041;
+                text-align: center;
+                width: 450px;
+                height: 2cm;
+                margin-top: 32px;
+                margin-right: 40px;
+                margin-left: 10px;
+                top: 57%;
+                position: absolute;
+                color: #F3F4F8;
+            }
+
+            .myButton1 {
+                background-image: url("elements/france.png");
+                text-indent: -20px;
+                background-size: contain;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 22px;
+                font-weight: bold;
+                padding: 40px 44px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton1:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton1:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton2 {
+                background-image: url("elements/uk.gif");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 22px;
+                font-weight: bold;
+                padding: 40px 44px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+
+            .myButton2:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton2:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton3 {
+                background-image: url("elements/pal.png");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 22px;
+                font-weight: bold;
+                padding: 40px 44px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton3:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton3:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .image {
+
+                top: 4%;
+                left: 45%;
+                height: 500px;
+                object-fit: cover;
+                width: 520px;
+                position: absolute;
+                display: inline-block;
+            }
+
+            .button {
+                position: absolute;
+                text-align: center;
+                top: 74%;
+                left: 1%;
+                width: 20%;
+                vertical-align: middle;
+                display: inline-flex;
+
+            }
+
+            .darkmode {
+                background-color: #2D3041;
+                color: #F3F4F8;
+                font-family: 'Anton';
+            }
+
+            .toggle {
+                cursor: pointer;
+                margin-left: 905px;
+                margin-top: 15px;
+            }
+
+
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 44px;
+                height: 24px;
+            }
+
+            /* Hide default HTML checkbox */
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgb(80, 146, 221);
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 20px;
+                width: 20px;
+                left: 2px;
+                bottom: 2px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input:checked+.slider {
+                background-color: #ebe846;
+            }
+
+            input:focus+.slider {
+                box-shadow: 0 0 1px #ebe846;
+            }
+
+            input:checked+.slider:before {
+                -webkit-transform: translateX(20px);
+                -ms-transform: translateX(20px);
+                transform: translateX(20px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+        }
+
+        @media(max-width: 1200px){ 
+            .image1 img {
+                width: 20%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            .effectone {
+                width: 100%;
+                position: absolute;
+                top: -225px;
+                left: 190px;
+
+            }
+
+            .image2 img {
+                width: 13%;
+                position: absolute;
+                left: 47%;
+                top: -4%;
+            }
+
+
+            h1 {
+                font-size: 60px;
+                color: #F3F4F8;
+                width: 280px;
+                font-family: 'Anton';
+                margin-top: 30px;
+                margin-bottom: 100px;
+                text-align: center;
+                margin-right: 70px;
+                margin-left: 160px;
+                text-shadow: 2px 2px 2px #b2cf10;
+
+            }
+
+            h4 {
+
+                font-size: 23px;
+                font-family: 'Anton';
+                text-shadow: 1px 1px 1px #cf1010;
+                color: #2D3041;
+                text-align: center;
+                width: 450px;
+                height: 2cm;
+                margin-top: 32px;
+                margin-right: 40px;
+                margin-left: 80px;
+                top: 57%;
+                position: absolute;
+                color: #F3F4F8;
+            }
+
+            .myButton1 {
+                background-image: url("elements/france.png");
+                text-indent: -20px;
+                background-size: contain;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 22px;
+                font-weight: bold;
+                padding: 40px 44px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton1:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton1:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton2 {
+                background-image: url("elements/uk.gif");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 22px;
+                font-weight: bold;
+                padding: 40px 44px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+
+            .myButton2:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton2:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton3 {
+                background-image: url("elements/pal.png");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 22px;
+                font-weight: bold;
+                padding: 40px 44px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton3:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton3:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .image {
+
+                top: 10%;
+                left: 45%;
+                height: 500px;
+                object-fit: cover;
+                width: 520px;
+                position: absolute;
+                display: inline-block;
+            }
+
+            .button {
+                position: absolute;
+                text-align: center;
+                top: 74%;
+                left: 7%;
+                width: 20%;
+                vertical-align: middle;
+                display: inline-flex;
+
+            }
+
+            .darkmode {
+                background-color: #2D3041;
+                color: #F3F4F8;
+                font-family: 'Anton';
+            }
+
+            .toggle {
+                cursor: pointer;
+                margin-left: 1100px;
+                margin-top: 15px;
+            }
+
+
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 44px;
+                height: 24px;
+            }
+
+            /* Hide default HTML checkbox */
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgb(80, 146, 221);
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 20px;
+                width: 20px;
+                left: 2px;
+                bottom: 2px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input:checked+.slider {
+                background-color: #ebe846;
+            }
+
+            input:focus+.slider {
+                box-shadow: 0 0 1px #ebe846;
+            }
+
+            input:checked+.slider:before {
+                -webkit-transform: translateX(20px);
+                -ms-transform: translateX(20px);
+                transform: translateX(20px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+        }
+
+        @media(max-width: 1382px){ 
+            .image1 img {
+                width: 20%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            .effectone {
+                width: 100%;
+                position: absolute;
+                top: -295px;
+                left: 220px;
+
+            }
+
+            .image2 img {
+                width: 13%;
+                position: absolute;
+                left: 47%;
+                top: -4%;
+            }
+
+
+            h1 {
+                font-size: 80px;
+                color: #F3F4F8;
+                width: 280px;
+                font-family: 'Anton';
+                margin-top: 35px;
+                margin-bottom: 100px;
+                text-align: center;
+                margin-right: 90px;
+                margin-left: 170px;
+                text-shadow: 2px 2px 2px #b2cf10;
+
+            }
+
+            h4 {
+
+                font-size: 25px;
+                font-family: 'Anton';
+                text-shadow: 1px 1px 1px #cf1010;
+                color: #2D3041;
+                text-align: center;
+                width: 500px;
+                height: 2cm;
+                margin-top: 32px;
+                margin-right: 40px;
+                margin-left: 90px;
+                top: 63%;
+                position: absolute;
+                color: #F3F4F8;
+            }
+
+            .myButton1 {
+                background-image: url("elements/france.png");
+                text-indent: -20px;
+                background-size: contain;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 22px;
+                font-weight: bold;
+                padding: 40px 44px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton1:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton1:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton2 {
+                background-image: url("elements/uk.gif");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 22px;
+                font-weight: bold;
+                padding: 40px 44px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+
+            .myButton2:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton2:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .myButton3 {
+                background-image: url("elements/pal.png");
+                background-size: cover;
+                background-color: #d6d6cc;
+                border-radius: 10px;
+                border: 1px solid #2D3041;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: 'Anton , regular';
+                font-size: 22px;
+                font-weight: bold;
+                padding: 40px 44px;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #161615;
+                width: 20%;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                margin-left: 15px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: rgb(27, 26, 26);
+            }
+
+            .myButton3:hover {
+                background-color: #D6D6CC;
+            }
+
+            .myButton3:active {
+                position: relative;
+                top: 1px;
+            }
+
+            .image {
+
+                top: 10%;
+                left: 45%;
+                height: 600px;
+                object-fit: cover;
+                width: 620px;
+                position: absolute;
+                display: inline-block;
+            }
+
+            .button {
+                position: absolute;
+                text-align: center;
+                top: 79%;
+                left: 8%;
+                width: 20%;
+                vertical-align: middle;
+                display: inline-flex;
+
+            }
+
+            .darkmode {
+                background-color: #2D3041;
+                color: #F3F4F8;
+                font-family: 'Anton';
+            }
+
+            .toggle {
+                cursor: pointer;
+                margin-left: 1270px;
+                margin-top: 15px;
+            }
+
+
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 44px;
+                height: 24px;
+            }
+
+            /* Hide default HTML checkbox */
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgb(80, 146, 221);
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 20px;
+                width: 20px;
+                left: 2px;
+                bottom: 2px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input:checked+.slider {
+                background-color: #ebe846;
+            }
+
+            input:focus+.slider {
+                box-shadow: 0 0 1px #ebe846;
+            }
+
+            input:checked+.slider:before {
+                -webkit-transform: translateX(20px);
+                -ms-transform: translateX(20px);
+                transform: translateX(20px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <img src="./../static/elements/effect1.png" class="effectone" alt="">
+    <img src="./../static/elements/recruteur4.png" alt="recruteur" class="image">
+
+    <div class="p1">
+        <div class="image2">
+            <img src="./../static/elements/effect2.png" alt="design">
+        </div>
+        <div class="image1">
+            <img src="./../static/elements/logo3.png" alt="logo_cv" id="logo">
+        </div>
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round" onclick="myFunction()"></span>
+            </label>
+        </div>
+        <div>
+            <h1>WELCOME TO CV GENERATOR </h1>
+            <h4> please pick a language for your curriculum vitae </h4>
+        </div>
+        <div class="button">
+            <a href="frformp1.html" class="myButton1">Français</a>
+            <a href="engformp1.html" class="myButton2">English</a>
+            <a href="arformp1.html" class="myButton3"> العربية
+            </a>
+        </div>
+</body>
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("darkmode");
+    }
+    /*function changeimone() {
+        var img = document.getElementById("logo");
+        if (img.src == "./elements/logo.png") {
+            img.src = "./elements/logo2.png";
+        }
+        else if (img.src == "./elements/logo2.png") {
+            img.src = "./elements/logo.png";
+        }
+        return false;
+    }*/
+</script>
+
+</html>

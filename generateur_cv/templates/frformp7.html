@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILLS</title>
+    <link rel="icon" href="elements/logomini.png">
+    <link rel="stylesheet" type="text/css" href="css/styletwo.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="elements/logo3.png" class="image1">
+        <div class="image2">
+            <img src="elements/effect2.png" alt="logo_cv">
+        </div>
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider_round" onclick="myFunction()"></span>
+            </label>
+        </div>       
+    </header>
+             <div class="cadre">
+              <h2> Compétences</h2>
+              <div class="form">
+                  <form method="POST"> 
+                      <label for="skill">Compétence</label><br><br>
+                      <textarea id="skill" name="skill" rows="1" cols="49"></textarea>
+                   </br></br>
+                   <label for="level">Niveau (sur 10)</label><br></br>
+                   <div class="slidecontainer">
+                      <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+                      <p>Niveau : <span id="demo"></span></p>
+                   </div>
+                  
+                  </br></br> 
+              </div>
+          </div>        
+          </div>  
+          
+
+      <div class="boutons">
+          <button class="back" onclick="javascript:window.location.href='frformp6.html';">Retour</button>
+          <button class="sub" type="submit">Envoyer</button>
+          <button class="next"><a href="frformp8.html">Suivant</a></button>
+      </div>
+           </form>
+      
+          <script>
+              function myFunction() {
+                 var element = document.body;
+                 element.classList.toggle("darkmode");
+              }
+              
+                  var slider = document.getElementById("myRange");
+                  var output = document.getElementById("demo");
+                  output.innerHTML = slider.value;
+                  
+                  slider.oninput = function() {
+                    output.innerHTML = this.value;
+                  }
+                  </script>
+      </body>
+      </html>
